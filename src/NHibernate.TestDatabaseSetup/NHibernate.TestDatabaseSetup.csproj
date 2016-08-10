@@ -74,7 +74,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
-      <HintPath>..\packages\Oracle.ManagedDataAccess.12.1.24160419\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.1.2400\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -113,11 +113,11 @@
     <PostBuildEvent>
       if not exist "$(TargetDir)x86" md "$(TargetDir)x86"
       xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\x86\*.*" "$(TargetDir)x86"
-      xcopy /s /y "$(SolutionDir)packages\Oracle.ManagedDataAccess.12.1.24160419\bin\x86\*.*" "$(TargetDir)x86"
+      xcopy /s /y "$(SolutionDir)packages\Oracle.ManagedDataAccess.12.1.2400\bin\x86\*.*" "$(TargetDir)x86"
       if not exist "$(TargetDir)amd64" md "$(TargetDir)amd64"
       xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\amd64\*.*" "$(TargetDir)amd64"
       if not exist "$(TargetDir)x64" md "$(TargetDir)x64"
-      xcopy /s /y "$(SolutionDir)packages\Oracle.ManagedDataAccess.12.1.24160419\bin\x64\*.*" "$(TargetDir)x64"
+      xcopy /s /y "$(SolutionDir)packages\Oracle.ManagedDataAccess.12.1.2400\bin\x64\*.*" "$(TargetDir)x64"
     </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
